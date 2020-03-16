@@ -1,4 +1,5 @@
 (function(){
+    //création menu sur chaque page
     let pages_url = ["/index.html", "/entreprise.html", "/aboutme.html", "/missions.html", "/bilan.html"];
     let actual_page = document.location.pathname;
     let menu_div = document.querySelector("#menu");
