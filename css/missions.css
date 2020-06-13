@@ -1,0 +1,15 @@
+.missions {
+    width: 80vh;
+}
+
+.mission h3 {
+    color: red;
+}
+
+.mission {
+    width: 50%;
+    height: 300px;;
+}
+.cover {
+    width: 200px;;
+}
