@@ -5,3 +5,11 @@
 body {
     margin: 0;
 }
+
+h1, h2, h3 {
+    font-family: 'Baloo 2', cursive;
+}
+
+p, a {
+    font-family: 'Raleway', sans-serif;
+}

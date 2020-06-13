@@ -9,6 +9,8 @@
 #menu_logo {
     position: absolute;
     left: 10px;
+    top: 1vh;
+    height: 5vh;
 }
 
 #menu a {

@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Rapport de stage</title>
 </head>
 <body>
+    <img src="./images/images.jpeg" id="menu_logo"/>
     <div id="menu">
         <a href="./">Home</a>
         <a href="./entreprise.php">Entreprise</a>

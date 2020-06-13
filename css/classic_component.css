@@ -1,6 +1,5 @@
 .button {
     padding: 15px;
-    width: 100px;
     background-color: red;
     color: white;
     display: flex;
@@ -8,8 +7,19 @@
     border-radius: 5px;
     box-shadow: 10px, 5px, rgba(60, 60, 60, 0.8);
     cursor: pointer;
+    border: none;
 }
 
 .button:hover {
     padding: 14px;
+}
+
+.bg_one {
+    background-color: lightseagreen;
+    padding: 50px 25px;
+}
+
+.bg_two {
+    background-color: darkgrey;
+    padding: 50px 25px;
 }

@@ -14,7 +14,11 @@
 
 <h1><?= $missions->title ?></h1>
 
-<p><?= $missions->content ?></p>
-<script src="missions.js"></script>
+<div id="main_div_article">
+    <?= $missions->content ?>
+</div>
 
+
+
+<script src="missions.js"></script>
 <?php require("footer.php"); ?>
