@@ -1,7 +1,32 @@
+#home_welcome {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/main/welcome.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #home_top {
     display: flex;
     width: 100%;
     height: 70vh;
+}
+
+#homeTitle {
+    position: absolute;
+    top: 7vh;
+    left: 40%;
+    color: white;
+}
+
+.home_top_prez {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 75px;
 }
 
 .home_top_id {
@@ -16,15 +41,6 @@
     margin-top: 50px;
 }
 
-.home_top_prez {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px 75px;
-}
 
 .home_bottom_prez {
     display: flex;
@@ -77,6 +93,25 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+#bullets {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.bullet {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.active {
+    background-color: black;
 }
 
 #workplace {

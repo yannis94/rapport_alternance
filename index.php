@@ -9,8 +9,10 @@
     $query->execute();
     $testimonals = $query->fetchAll(PDO::FETCH_OBJ);
 ?>
+<div id="home_welcome">
+    <h1 id="homeTitle">Rapport d'alternance</h1>
+</div>
 
-<h1>Rapport d'alternance</h1>
 <div id="home_top">
 
     <div id="home_topL" class="bg_color_contrast home_top_prez">
@@ -47,7 +49,7 @@
     <div class="cards_testimonial">
 
         <?php foreach($testimonals as $testi): ?>
-        <div class="card_testimonial bg_color_main">
+        <div class="testimonial<?= $testi->id ?> card_testimonial bg_color_main">
             <div class="testi_left">
                 <img src="<?= $testi->profil_pic ?>"/>
                 <h3><?= $testi->name ?></h3>
@@ -57,9 +59,9 @@
                 <h4><?= $testi->post ?></h4>
             </div>
         </div>
-        <?php endforeach;?>
-
+        <?php endforeach; ?>
     </div>
+    <div id="bullets"></div>
 </div>
 
 <div id="workplace" class="bg_color_second">
