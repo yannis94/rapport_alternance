@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Rapport de stage</title>
 </head>
-<body>
-    <img src="./images/images.jpeg" id="menu_logo"/>
-    <div id="menu">
+<body class="bg_color_main_light">
+    <div id="loading" class="bg_color_main">
+        <img src="./images/logo.jpeg"/>
+        <h1>Yaya Web Site</h1>
+    </div>
+    <img src="./images/logo.jpeg" id="menu_logo"/>
+    <div id="menu" class="bg_color_main">
         <a href="./">Home</a>
         <a href="./entreprise.php">Entreprise</a>
         <a href="./aboutme.php">About me</a>

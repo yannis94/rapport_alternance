@@ -1,5 +1,15 @@
-.missions {
-    width: 80vh;
+#missions {
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 50px;
+}
+
+#card1 {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .mission h3 {
@@ -7,13 +17,19 @@
 }
 
 .mission {
-    width: 50%;
-    height: 300px;;
+    width: 100%;
+    height: 400px;
+    box-shadow: 10px, 10px, rgba(60,60,60,0.7);
+    border-radius: 10px;
 }
 .cover {
-    width: 200px;;
+    width: 100%;
 }
 
+.card-bottom {
+    width: 100%;
+    z-index: 6;
+}
 
 /*--- article pattern ---*/
 

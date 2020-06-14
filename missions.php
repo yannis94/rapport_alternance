@@ -16,32 +16,27 @@
 <div id="missions">
     
     <?php foreach ($missions as $mission) : ?>
-    <div class="mission">
+    <div id="card<?= $mission->id ?>" class="mission bg_color_main">
         <img src="<?= $mission->img_path ?>" class="cover"/>
-        <h3><?= $mission->title ?></h3>
-
-        <!-- 
-            afficher en js le contenu de l'article
-            recup du contenu avec $mission->content
-            if click > apparition contenu déjaà chargé à l'avance
-        -->
-        <form method="post">
-            <button name="button<?= $mission->id ?>" class="button">
-                Voir mission
-                <?php
-                    $buttonId = $mission->id;
-                    if (isset($_POST["button$mission->id"])) {
-                        $_SESSION["article_ID"] = $buttonId;
-                        header("Location: ./article.php");
-                        exit;
-                    }
-                ?>
-            </button> 
-        </form>
+        <div class="card-bottom bg_color_main">
+            <h3><?= $mission->title ?></h3>
+            <form method="post">
+                <button name="button<?= $mission->id ?>" class="button bg_color_contrast">
+                    Voir mission
+                    <?php
+                        if (isset($_POST["button$mission->id"])) {
+                            $_SESSION["article_ID"] = $mission->id;
+                            header("Location: ./article.php");
+                            exit;
+                        }
+                    ?>
+                </button> 
+            </form>
+        </div>
     </div>
     <?php endforeach; ?>
 </div>
 
 
-<script src="missions.js"></script>
+<script src="./script/missions.js"></script>
 <?php require("footer.php"); ?>
