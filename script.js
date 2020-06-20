@@ -9,6 +9,15 @@ function loadingScreen() {
 
 function burgerStyle(status) {
     status = sessionStorage.getItem("menu_open");
+
+    function close() {
+        document.querySelector("#menu_link").style.animationName = "closeBurger";
+        document.querySelector("#menu_link").style.right = `${-40}vw`;
+        document.querySelector("#shadow").style.animationName = "shadowOff";
+        document.querySelector("#shadow").style.opacity = "0";
+        document.querySelector("#shadow").style.display = "none";
+        sessionStorage.setItem("menu_open", "close");
+    }
     
     if (status === "close") {
         document.querySelector("#menu_link").style.animationName = "openBurger";
@@ -17,24 +26,14 @@ function burgerStyle(status) {
         document.querySelector("#shadow").style.animationName = "shadowOn";
         document.querySelector("#shadow").style.opacity = "0.7";
 
-
         sessionStorage.setItem("menu_open", "open");
 
         setTimeout(() => {
-            document.querySelector("#menu_link").style.animationName = "closeBurger";
-            document.querySelector("#menu_link").style.right = `${-40}vw`;
-            document.querySelector("#shadow").style.animationName = "shadowOff";
-            document.querySelector("#shadow").style.display = "none";
-            document.querySelector("#shadow").style.opacity = "0";
+            close();
         },5000);
     }
     else {
-        document.querySelector("#menu_link").style.animationName = "closeBurger";
-        document.querySelector("#menu_link").style.right = `${-40}vw`;
-        document.querySelector("#shadow").style.animationName = "shadowOff";
-        document.querySelector("#shadow").style.opacity = "0";
-        document.querySelector("#shadow").style.display = "none";
-        sessionStorage.setItem("menu_open", "close");
+        close();
     }
 }
 

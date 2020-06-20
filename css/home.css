@@ -108,6 +108,7 @@
     height: 18px;
     border-radius: 50%;
     background-color: darkgray;
+    cursor: pointer;
 }
 
 .active {
