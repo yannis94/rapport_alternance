@@ -17,7 +17,9 @@
     
     <?php foreach ($missions as $mission) : ?>
     <div id="card<?= $mission->id ?>" class="mission bg_color_main">
-        <img src="<?= $mission->img_path ?>" class="cover"/>
+        <div class="card_top">
+            <img src="<?= $mission->img_path ?>" class="cover"/>
+        </div>
         <div class="card-bottom bg_color_main">
             <h3><?= $mission->title ?></h3>
             <form method="post">

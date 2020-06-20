@@ -7,9 +7,25 @@ function loadingScreen() {
     }, t*100);
 }
 
+function burgerStyle(status) {
+    status = sessionStorage.getItem("menu_open");
+    console.log(status)
+    if (status === "close") {
+        document.querySelector("#menu_link").style.right = 0;
+        sessionStorage.setItem("menu_open", "open");
+    }
+    else {
+        document.querySelector("#menu_link").style.right = `${-40}vw`;
+        sessionStorage.setItem("menu_open", "close");
+    }
+}
+
+
 (function() {
     let menu_page = document.querySelectorAll("#menu > a");
     let actual_page = document.location.href;
+    let burger = document.querySelector("#burger");
+    sessionStorage.setItem("menu_open", "close");
     
     menu_page.forEach(path => {
         if (path.href === actual_page) {
@@ -17,6 +33,7 @@ function loadingScreen() {
         }
     });
 
+    burger.addEventListener("click", burgerStyle);
 
     loadingScreen();
 })();

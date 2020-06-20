@@ -14,9 +14,17 @@
     </div>
     <div id="menu" class="bg_color_main">
         <img src="./images/logo.jpeg" id="menu_logo"/>
-        <a href="./">Home</a>
-        <a href="./entreprise.php">Entreprise</a>
-        <a href="./aboutme.php">About me</a>
-        <a href="./missions.php">Missions</a>
-        <a href="./bilan.php">Bilan</a>
+        <div id="menu_link" class="bg_color_main">
+            <a href="./">Home</a>
+            <a href="./entreprise.php">Entreprise</a>
+            <a href="./aboutme.php">About me</a>
+            <a href="./missions.php">Missions</a>
+            <a href="./bilan.php">Bilan</a>
+        </div>
+        
+        <div id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
