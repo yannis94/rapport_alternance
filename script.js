@@ -9,13 +9,31 @@ function loadingScreen() {
 
 function burgerStyle(status) {
     status = sessionStorage.getItem("menu_open");
-    console.log(status)
+    
     if (status === "close") {
+        document.querySelector("#menu_link").style.animationName = "openBurger";
         document.querySelector("#menu_link").style.right = 0;
+        document.querySelector("#shadow").style.display = "block";
+        document.querySelector("#shadow").style.animationName = "shadowOn";
+        document.querySelector("#shadow").style.opacity = "0.7";
+
+
         sessionStorage.setItem("menu_open", "open");
+
+        setTimeout(() => {
+            document.querySelector("#menu_link").style.animationName = "closeBurger";
+            document.querySelector("#menu_link").style.right = `${-40}vw`;
+            document.querySelector("#shadow").style.animationName = "shadowOff";
+            document.querySelector("#shadow").style.display = "none";
+            document.querySelector("#shadow").style.opacity = "0";
+        },5000);
     }
     else {
+        document.querySelector("#menu_link").style.animationName = "closeBurger";
         document.querySelector("#menu_link").style.right = `${-40}vw`;
+        document.querySelector("#shadow").style.animationName = "shadowOff";
+        document.querySelector("#shadow").style.opacity = "0";
+        document.querySelector("#shadow").style.display = "none";
         sessionStorage.setItem("menu_open", "close");
     }
 }
@@ -34,6 +52,7 @@ function burgerStyle(status) {
     });
 
     burger.addEventListener("click", burgerStyle);
+    document.querySelector("#shadow").addEventListener("click", burgerStyle);
 
     loadingScreen();
 })();
