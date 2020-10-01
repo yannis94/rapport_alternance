@@ -1,5 +1,47 @@
 @import url("css/menu.css");
-
+@import url("css/missions.css");
+@import url("css/home.css");
+@import url("css/classic_component.css");
+@import url("css/img_top.css");
+@import url("css/pattern.css");
+@import url("css/collections.css");
 body {
     margin: 0;
+    color: white;
+}
+
+h2, h3, h4 {
+    font-family: 'Baloo 2', cursive;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 36px;
+    font-weight: lighter;
+    color: #ECC705;
+}
+
+h2 {
+    font-size: 30px;
+    padding-left: 5px;
+    border-left: solid 3px #ECC705;
+}
+
+h3 {
+    font-size: 26px;
+    font-style: italic;
+}
+
+p, a, ul, ol {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+}
+a:hover {
+    color: #ECC705;
+    text-decoration: underline;
 }

@@ -1,0 +1,80 @@
+#missions {
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 50px;
+}
+
+#card1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.mission h3 {
+    color: red;
+}
+
+.mission {
+    width: 100%;
+    height: 400px;
+    box-shadow: 10px, 10px, rgba(60,60,60,0.7);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card_top {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.cover {
+    width: 100%;
+}
+
+.card-bottom {
+    width: 100%;
+    height: 150px;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--- article pattern ---*/
+
+.main_div_article {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    #missions {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 50px;
+    }
+    .mission {
+        height: 500px;
+    }
+
+    .card_top {
+        height: 350px;
+    }
+
+    .cover {
+        width: 200%;
+        height: 100%;
+    }
+}

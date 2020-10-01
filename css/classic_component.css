@@ -1,0 +1,151 @@
+.bg_color_main {
+    background-color: #105262;
+}
+.bg_color_main h3 {
+    color: #ECC705;
+}
+
+.bg_color_main_light {
+    background-color: #A0B9BF;
+}
+
+.bg_color_second {
+    background-color: #70939B;
+    color: white;
+}
+
+
+.bg_color_contrast {
+    background-color: #FAF5E4;
+    color: black;
+}
+
+#home_topR .button {
+    color: black;
+}
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#loading h1 {
+    border: none;
+    color: white;
+}
+
+#loading img {
+    width: 50vw;
+    margin-bottom: 50px;
+}
+
+.button {
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(60, 60, 60, 0.8);
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    padding: 14px;
+}
+
+.bg_one {
+    background-color: lightseagreen;
+    padding: 50px 25px;
+}
+
+.bg_two {
+    background-color: darkgrey;
+    padding: 50px 25px;
+}
+
+#footer {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 5vh;
+}
+
+#footer img {
+    width: 50px;
+}
+
+.intro {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.intro_content {
+    display: flex;
+    width: 100%;
+}
+.intro_descr {
+    width: 60%;
+    margin-right: 25px;
+}
+
+.intro_keyword {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px 25px;
+}
+
+#keyword_item_one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.intro_keyword_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 2px 5px rgba(60, 60, 60, 0.8);
+    background-color: #ECC705;
+}
+
+.intro_keyword_item img {
+    width: 45px;
+}
+
+@media screen and (max-width: 992px) {
+    .intro_content {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .intro_descr {
+        width: 100%;
+    }
+    .intro_keyword {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 25px;
+    }
+    .intro_keyword_item {
+        align-items: center;
+    }
+}
